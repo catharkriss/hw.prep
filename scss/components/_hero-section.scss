@@ -1,0 +1,70 @@
+.hero-container {
+    @extend .container-hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+}
+
+.hero-photo {
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+}
+
+.hero-divider {
+    width: 1px;
+    height: 560px;
+    background-color: $main-color;
+    margin: 0 auto;
+    transform: rotate(180deg);
+  
+}
+
+.hero-right {
+    text-align: center;
+
+    &__title {
+        @include text(36px, 900, $grey-3, 42.19px);
+        @include font-family($font-secondary);
+        padding-bottom: 30px;
+    }
+
+    &__divider {
+       width: 100px;
+       height: 1px;
+       background-color: $main-color;
+       margin: 0 auto;
+    }
+
+    &__subtitle {
+       @include text(24px, 400, $grey-3, 36px); 
+       @include font-family($font-main);
+       padding-top: 30px;
+       padding-bottom: 30px
+    }
+
+    &__links {
+        padding-bottom: 30px;
+        cursor: pointer;
+    }
+
+    &__text {
+        @include text(14px, 500, $grey-4, 24px);
+        @include font-family($font-main);
+        padding-bottom: 49px;
+    }
+
+    &__button {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border: 1px solid $main-color;
+        @include text (14px, 700, $grey-3, 14px);
+    }
+}
+.divider-text {
+    width: 20px;
+    height: 4px;
+    background-color:  $main-color;
+}
