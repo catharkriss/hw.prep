@@ -1,0 +1,19 @@
+.header {
+    @extend .container;
+    width: 450px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 121px;
+
+    &__title {
+        @include text(60px, 900, $main-color, 66px);
+        @include font-family('secondary');
+        padding-bottom: 39px
+    }
+
+    &__subtitle {
+        @include text(18px, 500, $grey-2, 24px);
+        @include font-family('main');
+        padding-bottom: 15px;
+    }
+}
